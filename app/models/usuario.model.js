@@ -9,6 +9,10 @@ module.exports = (sequelize, Sequelize) => {
     },
     edad: {
       type: Sequelize.INTEGER
+    },
+
+    sexo: {
+      type: Sequelize.STRING
     }
   });
 

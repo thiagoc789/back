@@ -16,7 +16,8 @@ exports.create = (req, res) => {
     const usuario = {
       cedula: req.body.cedula,
       nombre: req.body.nombre,
-      edad: req.body.edad
+      edad: req.body.edad,
+      sexo: req.body.sexo
     };
   
     // Save Usuario in the database
