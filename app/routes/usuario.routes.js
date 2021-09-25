@@ -1,10 +1,10 @@
 module.exports = app => {
-    const tutorials = require("../controllers/usuario.controller.js");
+    const usuario = require("../controllers/usuario.controller.js");
   
     var router = require("express").Router();
   
     // Create a new Tutorial
-    router.post("/", tutorials.create);
+    router.post("/", usuario.create);
   
-    app.use('/api/tutorials', router);
+    app.use('/api/usuario', router);
   };

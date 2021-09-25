@@ -1,10 +1,15 @@
 const dbConfig = require("../config/db.config.js");
-
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
   operatorsAliases: false,
+  define: {
+    timestamps: false,
+    createdAt: false,
+    updatedAt: false,
+    freezeTableName: true
+  },
 
   pool: {
     max: dbConfig.pool.max,
@@ -19,6 +24,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.usuario = require("./usuario.model.js")(sequelize, Sequelize);
+db.usuarios = require("./usuario.model.js")(sequelize, Sequelize);
 
 module.exports = db;
