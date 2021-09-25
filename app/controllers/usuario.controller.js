@@ -17,7 +17,9 @@ exports.create = (req, res) => {
       cedula: req.body.cedula,
       nombre: req.body.nombre,
       edad: req.body.edad,
-      sexo: req.body.sexo
+      sexo: req.body.sexo,
+      ciudad: req.body.ciudad,
+      telefono: req.body.telefono
     };
   
     // Save Usuario in the database

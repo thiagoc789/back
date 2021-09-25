@@ -13,6 +13,14 @@ module.exports = (sequelize, Sequelize) => {
 
     sexo: {
       type: Sequelize.STRING
+    },
+
+    ciudad: {
+      type: Sequelize.STRING
+    },
+
+    telefono: {
+      type: Sequelize.INTEGER
     }
   });
 
