@@ -27,6 +27,7 @@ db.sequelize = sequelize;
 db.gusto = require("./gusto.model.js")(sequelize, Sequelize);
 db.usuarios = require("./usuario.model.js")(sequelize, Sequelize);
 db.evento = require("./evento.model.js")(sequelize, Sequelize);
+db.tiempo = require("./tiempo.model.js")(sequelize, Sequelize);
 
 
 module.exports = db;
