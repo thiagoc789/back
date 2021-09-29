@@ -27,7 +27,9 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to eventos-choclo application." });
 });
 
+
 require("./app/routes/usuario.routes")(app);
+require("./app/routes/gusto.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 

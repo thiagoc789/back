@@ -1,8 +1,8 @@
 module.exports = (sequelize, Sequelize) => {
   const Usuario = sequelize.define("usuario", {
     cedula: {
-      type: Sequelize.INTEGER,
-      primaryKey: true
+      type: Sequelize.INTEGER
+      
     },
     nombre: {
       type: Sequelize.STRING
