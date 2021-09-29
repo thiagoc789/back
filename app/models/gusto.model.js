@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const Gusto = sequelize.define("gusto", {
+    const Gusto = sequelize.define("caracterizacion", {
       estrato: {
         type: Sequelize.INTEGER,
        

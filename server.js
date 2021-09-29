@@ -32,6 +32,7 @@ require("./app/routes/usuario.routes")(app);
 require("./app/routes/gusto.routes")(app);
 require("./app/routes/evento.routes")(app);
 require("./app/routes/tiempo.routes")(app);
+require("./app/routes/dinero.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 

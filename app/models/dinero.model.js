@@ -1,24 +1,21 @@
 module.exports = (sequelize, Sequelize) => {
-    const Evento = sequelize.define("actividades_preferidas", {
-      evento: {
+    const Dinero = sequelize.define("disponibilidad", {
+      comida: {
         type: Sequelize.STRING,
        
       },
-      actividad: {
+      bebida: {
         type: Sequelize.STRING
       },
-      tv: {
-        type: Sequelize.STRING
-      },
-  
-      deporte: {
+      tiempo_disponible: {
         type: Sequelize.STRING
       },
   
-      fisica: {
+      dinero: {
         type: Sequelize.STRING
-      }
+      },
+  
     });
   
-    return Evento;
+    return Dinero;
   };
